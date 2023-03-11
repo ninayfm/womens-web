@@ -1,41 +1,96 @@
 body {
-    background-color: #f0e6dd;
+    background-color: #fdf5ed;
     font-size: 125%;
 }
 
-h1{
-    color: black;
-    font-size: 70px;
-    font-family: Arial;
-    font-weight: bold;
-    line-height: 100px;
+main {
+    padding: 20px 20px;
+}
+
+footer {
+    color: white;
+    background-color: #333333;
     padding: 30px 10px;
 }
 
+footer a{
+    font-family: Mulish, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.tops {
+    color: white;
+    font-weight: bold;
+    padding: 40px 10px;
+}
+
+h1{
+    color: #000000;
+    font-size: 70px;
+    font-family: Aleo, Mulish, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    line-height: 120%;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
 h2{
+    font-family: Aleo, Mulish, 'Times New Roman', Times, serif;
     font-size: 30px;
-    padding: 30px 10px 10px;
+    font-weight: bold;
+    padding: 20px 10px 10px;
+    text-align: left;
+}
+
+h3{
+    font-family: Mulish, 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
 }
 
 p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Mulish, 'Times New Roman', Times, serif;
+    font-size: 18px;
     line-height: 120%;
-    padding: 10px;
+    padding: 4px 10px;
 }
 
 img{
     display: block;
-    margin: auto;
     width: 50%;
-    border: 8px solid #c4a38e;
+    margin: auto;
+    border: 8px double #c4a38e;
     border-radius: 10px;
 }
 
-img:hover{
+#ind {
+    width: 100%;
+    border: 4px solid #917869;
+}
+
+/* img:nth-of-type(odd){
+    border: 8px solid #c4a38e;
+} */
+
+/* img:nth-of-type(even){
+    border: 8px dotted #cc9ad8;
+} */
+
+/* img:hover{
     border: 8px solid #ffcc6c;
+} */
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar ul {
+    width: 100%;
     margin: 0;
     padding: 0;
     background-color: #333;
@@ -43,13 +98,16 @@ img:hover{
 
 li{
     display: inline-block;
+    width: 100%;
+    font-family: Mulish, 'Times New Roman', Times, serif;
 }
 
 li a{
+    font-family: Aleo, Mulish, 'Times New Roman', Times, serif;
     display: block;
     color: white;
     text-align: center;
-    padding: 20px 20px;
+    padding: 20px 40px;
     text-decoration: none;
 }
 
@@ -71,4 +129,104 @@ li a:hover{
 
 .skip:focus{
     left: 0px;
+}
+
+header p{
+    padding-left: 30px;
+}
+
+dl {
+    margin: 10px;
+}
+
+dt {
+    margin-top: 15px;
+    font-family: Aleo;
+    font-size: 24px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    margin-bottom: 10px;
+}
+
+#index-header {
+    background-color: #a2a1a1;
+    background-blend-mode: multiply;
+    background-image: url("../images/holding_flowers.jpg");
+    min-height: 300px;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#index-header h1 {
+    color: #ffffff;
+    text-align: justify;
+}
+
+#index-img {
+    width: 100%;
+    padding: 0;
+    border: 5px dotted #c4a38e;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.grid img{
+    width: 90%;
+    transition: 0.2s;
+}
+
+.grid img:hover {
+    transform: scale(1.01);
+    transition-duration: 0.2s;
+    box-shadow: 10px 8px rgba(158, 145, 133, 0.8);
+}
+
+.grid h2{
+    text-align: center;
+}
+
+.grid ul{
+    margin: 10px;
+    font-size: 18px;
+    list-style-type: circle;
+}
+
+
+@keyframes index-zoom{
+    from {
+        width: 50%;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+#index-img{
+    animation-name: index-zoom;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+    #index-img{
+        animation: none;
+    }
+}
+
+@media screen and (min-width: 900px){
+
+
 }

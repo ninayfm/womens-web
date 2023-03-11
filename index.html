@@ -9,8 +9,12 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- connect to a Google font -->  
+  <!-- connect to a Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Mulish:wght@300&display=swap" rel="stylesheet">
   <!-- connect to a Font Aweseom font -->
+  <script src="https://kit.fontawesome.com/e0322e570a.js" crossorigin="anonymous"></script>
   <!-- connect to a favicon -->
 
   <title>Women's Web</title>
@@ -20,17 +24,19 @@
   <header>
     <nav class="navbar">
         <ul>
-          <li><a href="index.html">About</a></li>
+          <li><a href="index.html" class="active">About</a></li>
           <li><a href="literature.html">Literature</a></li>
           <li><a href="history.html">History and Politics</a></li>
           <li><a href="femdict.html">Feminist Dictionary</a></li>
         </ul>
     </nav>
-    <h1> Woman's Web </h1>
+    <div id="index-header">
+      <h1> Woman's Web </h1>
+    </div>
   </header>
 
   <main>
-    <img src="images/women_march_pano.jpg" width="200" alt="Image of the Ann Arbor Women's March">
+    <img src="images/women_march_pano.jpg" width="200" alt="Image of the Ann Arbor Women's March" id="index-img">
 
     <div>
       <p>
@@ -69,10 +75,10 @@
 
   <footer>
     <p class="thanks">
-      Thanks for visiting! <i></i>
+      Thanks for visiting! <i class="fa-regular fa-face-smile-wink"></i>
     </p>
-    <p>Orginal content created by Kelsey Toporski 2019</p>
-    <a href="#main">Back to Top</a>
+    <p><i class="fa-regular fa-copyright"></i>Orginal content created by Kelsey Toporski 2019</p>
+    <a href="#main" class="tops">Back to Top</a>
   </footer>
 </body>
 </html>
