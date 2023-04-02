@@ -67,6 +67,7 @@ img{
 video{
     display: block;
     margin: auto;
+    width: 95%;
     border-radius: 18px;
     margin-top: 20px;
 }
@@ -304,5 +305,21 @@ dt {
         align-self: stretch;
         justify-self: stretch;
         border: 3px dotted #b8a798;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .grid {
+        display: grid;
+        width: 90%;
+        margin: auto;
+        padding-top: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 20px;
+        column-gap: 10px;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
     }
 }
